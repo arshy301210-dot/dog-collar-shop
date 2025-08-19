@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Collar Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: white;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      transition: background-image 1s ease-in-out;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+    }
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #ff6347;
+      color: white;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #e5533d;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Dog Collar Shop</h1>
+  <p>Stylish and comfy collars for your best friend 🐶</p>
+  <a href="product.html" class="btn">Buy Now</a>
+
+  <script>
+    // List of background puppy images
+    const backgrounds = [
+      "https://images.unsplash.com/photo-1507149833265-60c372daea22",
+      "https://images.unsplash.com/photo-1518717758536-85ae29035b6d",
+      "https://images.unsplash.com/photo-1517849845537-4d257902454a",
+      "https://images.unsplash.com/photo-1507149833265-60c372daea22?crop=entropy&cs=tinysrgb&fit=crop&h=1080&w=1920"
+    ];
+
+    let index = 0;
+    const body = document.body;
+
+    function changeBackground() {
+      body.style.backgroundImage = `url('${backgrounds[index]}')`;
+      index = (index + 1) % backgrounds.length;
+    }
+
+    // Initial background
+    changeBackground();
+
+    // Rotate every 5 seconds
+    setInterval(changeBackground, 5000);
+  </script>
+</body>
+</html>

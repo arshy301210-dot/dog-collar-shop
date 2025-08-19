@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Collar - $15</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #fefefe;
+      padding: 30px;
+    }
+    h1 {
+      color: #333;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+    .price {
+      font-size: 1.5rem;
+      color: #27ae60;
+      margin: 20px 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #ff6347;
+      color: white;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #e5533d;
+    }
+    .gallery {
+      margin-top: 40px;
+    }
+    .gallery h2 {
+      margin-bottom: 20px;
+      color: #444;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .grid img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>Premium Dog Collar</h1>
+  <!-- Real shiny black collar -->
+  <img src="collar.jpg" alt="Shiny Black Dog Collar" 
+     style="max-width: 400px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+  <p class="price">Only $15</p>
+  <p>Made with love ❤️ — durable, stylish, and comfortable for your pup!</p>
+
+  <!-- Stripe link goes here -->
+  <a href="https://buy.stripe.com/test_4gMcN44eg34o17sfFu3wQ00" class="btn">Buy Now</a>
+
+  <div class="gallery">
+    <h2>Happy Customers 🐾</h2>
+    <div class="grid">
+      <img src="https://images.unsplash.com/photo-1507149833265-60c372daea22" alt="Puppy with collar">
+      <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a" alt="Cute puppy">
+      <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d" alt="Playful dog">
+    </div>
+  </div>
+</body>
+</html>
